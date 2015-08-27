@@ -7,7 +7,6 @@ Personal-Trainer
 - Trainings Eintragen (Datum, Dauer)
 - Statistiken auswerten (Diagramm/Tabelle vergleichen)
 - Das Ergebnis ausdrucken können, evt auch teilen (Sozial Media)
-- 
 
 
 #Die Profilseite
