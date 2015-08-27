@@ -7,6 +7,7 @@ Personal-Trainer
 - Trainings Eintragen (Datum, Dauer)
 - Statistiken auswerten (Diagramm/Tabelle vergleichen)
 - Das Ergebnis ausdrucken können, evt auch teilen (Sozial Media)
+- Erinnerungs Benachrichtigung (via E-Mail -> Kalender)
 
 
 #Die Profilseite
@@ -16,6 +17,6 @@ Sobald man eingeloggt ist, gelangt man auf seine Seite wo man ein Profil einrich
 
 Weiter kann man auf seiner Profilseite, die Trainingsdaten eintragen (Datum/Dauer)
 
-Durch Eintragen mehrerer Trainings, wird es dann die möglichkeit geben diese auszuwerten (über Wochen/Monate/Jahr). bzw. zu vergleichen (via. Diagramm/Tabelle)
+Durch Eintragen mehrerer Trainings, wird es dann die möglichkeit geben diese auszuwerten/vergleichen über Wochen, Monate, Jahr. (via. Diagramm/Tabelle)
 
-
+Damit man die Trainings nicht vergisst einzutragen, wird man Benachrichtigt. Die Zeit der Erinnerung kann man auf seinem Profil einstellen. (via Kalender)
