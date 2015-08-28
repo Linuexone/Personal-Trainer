@@ -11,6 +11,7 @@ Personal-Trainer
 
 
 #Die Profilseite
+- Erstellen/Anmelden von Benutzeraccounts
 Eine einfache übersichtliche Startseite, wo man sich mit seinen Accountdaten einloggt oder direkt einen neuen Account erstellen kann.
 
 Sobald man eingeloggt ist, gelangt man auf seine Seite wo man ein Profil einrichten kann mit verschiedenen Werten wie Name/Alter/Grösse/Trainingsort etc. was man später natürlich auch noch anpassen kann. 
