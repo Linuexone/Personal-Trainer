@@ -14,12 +14,12 @@ Personal-Trainer
 
 - Eine einfache übersichtliche Startseite, wo man sich mit seinen Accountdaten einloggt oder direkt einen neuen Account erstellen kann.
 
-- Sobald man eingeloggt ist, gelangt man auf seine Seite wo man ein Profil einrichten kann mit verschiedenen Werten wie Name/Alter/Grösse/Trainingsort etc. was man später natürlich auch noch anpassen kann. 
+- Sobald man eingeloggt ist, gelangt man auf seine Seite, wo man ein Profil einrichten kann mit verschiedenen Werten, wie Name/Alter/Grösse/Trainingsort etc. was man später natürlich auch noch anpassen kann. 
 
 - Weiter kann man auf seiner Profilseite, die Trainingsdaten eintragen (Datum/Dauer)
 
-- Durch Eintragen mehrerer Trainings, wird es dann die möglichkeit geben diese auszuwerten/vergleichen über Wochen, Monate, Jahr. (via. Diagramm/Tabelle)
+- Durch Eintragen mehrerer Trainings, wird es dann die Möglichkeit geben diese auszuwerten/vergleichen über Wochen, Monate, Jahr. (via. Diagramm/Tabelle)
 
 - Man soll die Statistik ausdrucken können.
 
-- Damit man die Trainings nicht vergisst einzutragen, wird man Benachrichtigt. Die Zeit der Erinnerung kann man auf seinem Profil einstellen. (via Kalender)
+- Damit man die Trainings nicht vergisst einzutragen, wird man benachrichtigt. Die Zeit der Erinnerung kann man auf seinem Profil einstellen. (via Kalender)
