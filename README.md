@@ -23,3 +23,23 @@ Personal-Trainer
 - Man soll die Statistik ausdrucken können.
 
 - Damit man die Trainings nicht vergisst einzutragen, wird man benachrichtigt. Die Zeit der Erinnerung kann man auf seinem Profil einstellen. (via Kalender)
+
+
+Installationsanleitung
+======================
+
+- Der Gebrauch von virtualenv ist zu empfehlen!
+
+- Im erstellten Projekt Ordner müssen wir nun Klonen:
+	(Achtung!: Verzeichnispfad mit dem Befehl "pwd" herausfinden und hinter die Klone URL setzen!)
+
+	git clone git@github.com:Linuexone/Personal-Trainer.git /Users/luginbuhl/Developer/Projects/Personal-Trainer
+
+- Nach dem Klonen, die Requirements installieren:
+	pip install -r requirements.txt
+
+- Jetzt brauchen wir noch eine Datenbank:
+	python manage.py createdb
+
+- Zum starten vom Webserver braucht es folgenden Befehl:
+	python manage.py runserver
