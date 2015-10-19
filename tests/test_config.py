@@ -1,31 +1,29 @@
-#! ../env/bin/python
-# -*- coding: utf-8 -*-
-from webapp import create_app
+# tests/test_config.py
 
 
-class TestConfig:
-    def test_dev_config(self):
-        """ Tests if the development config loads correctly """
+import unittest
 
-        app = create_app('webapp.settings.DevConfig', env='dev')
+from flask import current_app
+from flask.ext.testing import TestCase
 
-        assert app.config['DEBUG'] is True
-        assert app.config['SQLALCHEMY_DATABASE_URI'] == 'sqlite:///../database.db'
-        assert app.config['CACHE_TYPE'] == 'null'
+from project import app
 
-    def test_test_config(self):
-        """ Tests if the test config loads correctly """
 
-        app = create_app('webapp.settings.TestConfig', env='dev')
+class TestTestingConfig(TestCase):
 
-        assert app.config['DEBUG'] is True
-        assert app.config['SQLALCHEMY_ECHO'] is True
-        assert app.config['CACHE_TYPE'] == 'null'
+    def create_app(self):
+        app.config.from_object('project.config.TestingConfig')
+        return app
 
-    def test_prod_config(self):
-        """ Tests if the production config loads correctly """
+    def test_app_is_testing(self):
+        self.assertTrue(current_app.config['TESTING'])
+        self.assertTrue(app.config['DEBUG'] is True)
+        self.assertTrue(app.config['BCRYPT_LOG_ROUNDS'] == 1)
+        self.assertTrue(app.config['WTF_CSRF_ENABLED'] is False)
 
-        app = create_app('webapp.settings.ProdConfig', env='prod')
+    def test_app_exists(self):
+        self.assertFalse(current_app is None)
 
-        assert app.config['SQLALCHEMY_DATABASE_URI'] == 'sqlite:///../database.db'
-        assert app.config['CACHE_TYPE'] == 'simple'
+
+if __name__ == '__main__':
+    unittest.main()

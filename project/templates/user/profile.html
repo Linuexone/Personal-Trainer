@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>Deine Profilseite</h1>
+<br>
+
+{% if current_user.is_authenticated() %}
+  <p>Email: {{current_user.email}}</p>
+{% endif %}
+
+<h2>Passwort ändern</h2>
+<br>
+<form class="form-reset" role="form" method="post" action="">
+  {{ form.csrf_token }}
+  <p>
+    {{ form.password(placeholder="Passwort") }}
+    <span class="error">
+      {% if form.password.errors %}
+        {% for error in form.password.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </p>
+  <p>
+  {{ form.confirm(placeholder="Passwort wiederholen") }}
+    <span class="error">
+      {% if form.confirm.errors %}
+        {% for error in form.confirm.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </p>
+  <button class="btn btn-success" type="submit">Ändern</button>
+</form>
+
+
+{% endblock %}
